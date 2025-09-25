@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-ag" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tool Sáng Tạo Ảnh Với AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Babel Standalone for in-browser transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="importmap">
 {
   "imports": {
@@ -18,6 +20,7 @@
 </head>
   <body class="bg-[#103c3c]">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- Change script type to "text/babel" for Babel to process it -->
+    <script type="text/babel" data-type="module" src="/index.tsx"></script>
   </body>
 </html>
